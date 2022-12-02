@@ -3,10 +3,11 @@ import { createShortLink,getShortLink,searchShortLink,mostClickedLinks,topLinkCr
 
 const router = express.Router();
 
-router.get("/:hashedId",getShortLink);
+
 router.get("/top-link-creators",topLinkCreators)
 router.get("/most-clicked-links",mostClickedLinks)
 router.get("/search",searchShortLink);
+router.get("/:hashedId",getShortLink);
 router.post("/", createShortLink);
 
 
