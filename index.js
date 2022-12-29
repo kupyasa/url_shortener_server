@@ -7,10 +7,10 @@ import shortLinkRouter from "./routes/shortlinks.js";
 
 const app = express();
 dotenv.config();
-app.use(bodyParser.json({limit:"30mb", extented: true}));
-app.use(bodyParser.urlencoded({limit:"30mb",extended:true}));
-app.use(bodyParser.text({limit:"30mb",extended:true}));
-app.use(bodyParser.raw({limit:"30mb",extended:true}));
+app.use(bodyParser.json({extented: true}));
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.text({extended:true}));
+app.use(bodyParser.raw({extended:true}));
 
 
 app.use(cors());
